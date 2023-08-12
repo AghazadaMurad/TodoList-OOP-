@@ -1,0 +1,211 @@
+.greet {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.addTask {
+  background-color: var(--light-blue);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 30px;
+  min-width: 500px;
+}
+
+.addTask form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.addTask form input {
+  background-color: transparent;
+  border: 2px solid #edf2f4;
+  padding: 12px;
+  font-family: inherit;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #edf2f4;
+}
+
+.addTask form input:focus {
+  outline: none;
+}
+
+.addTask form input::placeholder {
+  color: #edf2f4;
+}
+
+.btn {
+  color: #edf2f4;
+  background-color: #ef233c;
+  padding: 12px;
+  border: 2px solid #edf2f4;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: inherit;
+  transition: all 200ms linear;
+  font-size: 16px;
+}
+
+.btn:hover {
+  color: #ef233c;
+  background-color: #edf2f4;
+}
+
+.taskList {
+  border: 2px solid var(--light-blue);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.taskList ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-blue);
+  color: #edf2f4;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.taskList ul li span {
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+.message {
+  color: #fff;
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --dark-blue: #171e3a;
+  --light-blue: #242e4c;
+
+  --pink: #f570b5;
+  --green: #84cca4;
+  --yellow: #cb9770;
+
+  --transition: all 200ms linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-blue);
+  position: relative;
+}
+
+.signin-form {
+  background-color: #fff;
+  padding: 50px 40px;
+  border-radius: 10px;
+  position: absolute;
+  width: 345px;
+  position: relative;
+}
+
+.signin-form::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: calc(100% + 100px);
+  background-color: var(--light-blue);
+  z-index: -1;
+  top: -50px;
+  left: 100px;
+  border-radius: inherit;
+}
+
+.signin-form h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+.form-group input {
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+  background: none;
+  border: 2px solid var(--dark-blue);
+  border-radius: 5px;
+  color: var(--dark-blue);
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: var(--dark-blue);
+}
+
+.signin-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.signin-button {
+  padding: 13px 20px;
+  color: #fff;
+  background-color: var(--light-blue);
+  font-size: 14px;
+  border-radius: 30px;
+  border: 2px solid var(--light-blue);
+  outline: none;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.signin-button:hover {
+  color: var(--dark-blue);
+  background-color: #fff;
+}
+
+.form-link {
+  color: var(--dark-blue);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.formAction-list {
+  text-align: center;
+  list-style: none;
+}
